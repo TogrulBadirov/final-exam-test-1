@@ -1,0 +1,20 @@
+#add-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    background-color: #132c69;
+    h1{
+        margin-bottom: 80px;
+        color: #fff;
+    }
+ form{
+    
+    input{
+        display: block;
+        margin-bottom: 20px;
+        padding: 5px 20px ;
+    }
+ }
+}

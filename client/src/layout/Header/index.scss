@@ -1,0 +1,115 @@
+#header {
+  height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .bacground-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    width: 35%;
+    height: 100%;
+    z-index: 1;
+  }
+  .bacground-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f1f6f7;
+    width: 65%;
+    height: 100%;
+    z-index: 1;
+  }
+  .header-container {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    max-width: 950px;
+    .left-side {
+        max-height: 550px;
+      img {
+        max-width: 400px;
+        height: 100%;
+      }
+    }
+    .right-side {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 30px;
+      .header-top {
+        color: #555555;
+        font-size: 26px;
+      }
+      .content-header {
+        font-size: 50px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+      .header-paragraph {
+        color: #777;
+        font-size: 15px;
+        line-height: 1.5;
+      }
+ 
+    }
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #header {
+        height: 80vh;
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #header {
+        height: 60vh;
+        .bacground-left {
+            width: 20%;
+          }
+          .bacground-right {
+            width: 80%;
+          }
+        .header-container {
+            position: relative;
+            z-index: 3;
+            display: flex;
+            max-width: 750px;
+            .left-side {
+                max-height: 500px;
+              img {
+                max-width: 200px;
+                height: 100%;
+              }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    #header {
+        max-height: 80vh;
+        .bacground-left {
+            width: 10%;
+          }
+          .bacground-right {
+            width: 90%;
+          }
+        .header-container {
+            position: relative;
+            z-index: 3;
+            display: flex;
+            max-width: 750px;
+            padding: 0 50px;
+            .left-side {
+                display: none;
+                max-height: 500px;
+              img {
+                max-width: 200px;
+                height: 100%;
+              }
+            }
+        }
+    }
+}

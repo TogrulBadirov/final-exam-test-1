@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+#trending-product {
+  margin-top: 50px;
+  .container {
+    .products{
+        display: flex;
+        justify-content: center;
+        .row{
+            justify-content: center;
+        }
+
+    }
+  }
+}
